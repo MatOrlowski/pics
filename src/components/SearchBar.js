@@ -3,9 +3,10 @@ import React from "react";
 class SearchBar extends React.Component {
   state = { term: "" }; //Initializing state
 
-  onFormSubmit(event) {
+  onFormSubmit = (event) => {
     event.preventDefault(); //preventing from self-refreshing
-  }
+    console.log(this.state.term);
+  };
 
   render() {
     return (
